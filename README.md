@@ -1,7 +1,7 @@
-# json-server-mulitple-files-sample
-
+# json Mock Server
 
 ## Build
+
 `yarn`
 
 Install dependencies
@@ -10,17 +10,18 @@ Install dependencies
 
 Start the server
 
-
 ## Easily mock API:
 
 Add files:
+
 ```
 └── mock
-    └── hello
-        ├── world.js
-        └── index.js
+    └── sources
+        ├── comments.js
+        └── posts.js
 ```
+
 And you'll be able to get data by visiting:
 
-`localhost:9898/hello/world`
-`localhost:9898/hello`
+`localhost:9898/comments`
+`localhost:9898/posts`

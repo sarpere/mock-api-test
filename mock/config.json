@@ -1,5 +1,0 @@
-{
-  "port": 9898,
-  "middlewares": ["./mock/middlewares/_postAsGet.js"],
-  "delay": 800
-}

@@ -1,12 +1,11 @@
 {
-  "name": "json-server-multiple-files-sample",
+  "name": "json-mock-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./mock/_index.js",
   "scripts": {
-    "mock": "nodemon --watch mock --exec 'json-server ./mock/_db.js -c ./mock/config.json'"
+    "mock": "nodemon --watch "
   },
-  "author": "Billyyyyy3320",
   "license": "ISC",
   "devDependencies": {
     "glob": "^7.1.4",

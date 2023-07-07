@@ -12,10 +12,8 @@ apiFiles.forEach((filePath) => {
     url.slice(url.length - 9) === "/index.js"
       ? url.slice(0, url.length - 9) // remove /index.js
       : url.slice(0, url.length - 3); // remove .js
-  console.log(url);
   data[url] = api;
 });
-console.log(data);
 module.exports = () => {
   return data;
 };
