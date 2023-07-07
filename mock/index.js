@@ -1,6 +1,6 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
-const createDB = require("./_db.js");
+const createDB = require("./db.js");
 const routes = require("./routes.json");
 const _ = require("lodash");
 const DB = createDB();

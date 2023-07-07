@@ -2,7 +2,7 @@
   "name": "json-mock-server",
   "version": "1.0.0",
   "description": "",
-  "main": "./mock/_index.js",
+  "main": "./mock/index.js",
   "scripts": {
     "mock": "nodemon --watch "
   },

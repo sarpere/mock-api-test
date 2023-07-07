@@ -1,8 +1,11 @@
 const Path = require("path");
 const glob = require("glob");
-const apiFiles = glob.sync(Path.resolve(__dirname, "./") + "/**/[!_]*.js", {
-  nodir: true,
-});
+const apiFiles = glob.sync(
+  Path.resolve(__dirname, "./sources") + "/**/[!_]*.js",
+  {
+    nodir: true,
+  }
+);
 
 let data = {};
 apiFiles.forEach((filePath) => {
