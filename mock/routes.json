@@ -1,0 +1,4 @@
+{
+  "/api/v1/users/:userId/list": "/profile/:userId",
+  "/api/v1/users/list": "/profile"
+}

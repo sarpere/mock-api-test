@@ -1,6 +1,7 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const createDB = require("./_db.js");
+const routes = require("./routes.json");
 const _ = require("lodash");
 const DB = createDB();
 const router = jsonServer.router(DB); //the database
@@ -24,6 +25,10 @@ router.render = (req, res) => {
 };
 
 server.use(middlewares);
+
+// Add this before server.use(router)
+server.use(jsonServer.rewriter(routes));
+
 server.use(router);
 
 server.listen(PORT, () => {
