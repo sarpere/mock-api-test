@@ -1,4 +1,4 @@
-# json Mock Server
+# Json Mock Server
 
 ## Build
 
